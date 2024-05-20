@@ -6,9 +6,8 @@ soup = BeautifulSoup(target_page.text, 'html.parser')
 with open("Output.txt", "w") as text_file:
     text_file.write("--"+ target_website +"--\n" )
 
-#dont know to how to get pages . u'll have to type ir urself
-#page_numb = soup.findAll('a', attrs={'class':'page-numbers'}) returns all of the pages + some other strings #returns every page info and string doesnt work
 
+#dont know to how to get pages . u'll have to type ir urself :skull:
 page_numb = 48  # enter your pages number
 number = 0 #"Finds"(counted files) starting number
 start_numb = 1 #pages starting number
