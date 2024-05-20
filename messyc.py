@@ -5,14 +5,13 @@ target_page = requests.get(target_website)
 soup = BeautifulSoup(target_page.text, 'html.parser')
 with open("Output.txt", "w") as text_file:
     text_file.write("--"+ target_website +"--\n" )
-  
 
-#pages are hard af to get . U will have to enter them urself lmao
-#page_numb = soup.findAll('a', attrs={'class':'page-numbers'}) returns all of the pages + some other strings
+#dont know to how to get pages . u'll have to type ir urself
+#page_numb = soup.findAll('a', attrs={'class':'page-numbers'}) returns all of the pages + some other strings #returns every page info and string doesnt work
 
-page_numb = 48  # enter your page number
-number = 0
-start_numb = 1
+page_numb = 48  # enter your pages number
+number = 0 #"Finds"(counted files) starting number
+start_numb = 1 #pages starting number
 for x in range(page_numb):
  target_page_in = requests.get("https://scrapeme.live/shop/page/"+ str(start_numb) +"/")
  soup = BeautifulSoup(target_page_in.text, 'html.parser')
