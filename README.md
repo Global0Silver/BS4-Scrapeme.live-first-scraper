@@ -1,4 +1,4 @@
-# BS4-Scrapeme.live-first-scraper
+# scraper
 https://scrapeme.live/shop/ 
 
 This is my first web scraper
